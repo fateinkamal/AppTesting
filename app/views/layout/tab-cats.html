@@ -1,0 +1,39 @@
+<ion-view view-title="Categories">
+    <ion-content>
+        <div class="bar bar-header item-input-inset">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios-search placeholder-icon"></i>
+                <input type="search" placeholder="Search">
+            </label>
+        </div>
+        <button ng-click="openModal()">show modal</button>
+    </ion-content>
+</ion-view>
+<script id="my-modal.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar>
+            <h1 class="title">My Modal title</h1>
+            <button ng-click="closeModal()">Close</button>
+        </ion-header-bar>
+        <ion-content>
+        <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">First Name</span>
+    <input type="text" placeholder="John">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Last Name</span>
+    <input type="text" placeholder="Suhr">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Email</span>
+    <input type="text" placeholder="john@suhr.com">
+  </label>
+  <button class="button button-small" align="center">
+      Create Account
+    </button>
+</div>
+        </ion-content
+    </ion-modal-view>
+
+</script>
